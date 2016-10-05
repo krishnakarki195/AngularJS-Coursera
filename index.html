@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="en" ng-app="myFirstApp">
 <head>
   <meta charset="utf-8">
-  <title>Coursera Test</title>
+  <title>Name Calculator</title>
   <link rel="stylesheet" href="#">
   <meta name="description" content="…">
+  <script src="angular.min.js" > </script>
+  <script src="app.js" ></script>
+  <style>
+    body { font-size: 1.3em; }
+  </style>
 </head>
 <body>
-
-  <header>
-    <!-- site-wide header -->
-    <h1>Hello Coursera  I am thrilled about this course</h1>
-  </header>
-
-  <main>
-    <!-- this page’s main content -->
-  </main>
-
-  <nav>
-    <!-- site-wide navigation -->
-  </nav>
-
-  <footer>
-    <!-- site-wide footer -->
-  </footer>
+  <h1>Name Calculator</h1>
+  <div ng-controller="myFirstController">
+    <input type="text" ng-model="name" ng-keyup="displayNumeric()" /><br />
+    Numeric Value: {{totalValue}}
+  </div>
 
 </body>
 </html>
