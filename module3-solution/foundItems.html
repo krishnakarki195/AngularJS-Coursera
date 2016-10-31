@@ -1,0 +1,11 @@
+<div style="float:left">
+    <ol>
+        <li ng-repeat="category in searchCtrl.foundItemsList">
+            Name: {{category.name}}</br>
+            Short name: {{category.short_name}}</br>
+            Descripton: {{category.description}}
+            <button class="btn btn-primary" ng-click='searchCtrl.onRemove({index:$index});'>Don't want this one!</button>
+
+        </li>
+    </ol>
+</div>
